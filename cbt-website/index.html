@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CBT System - Login</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-page">
+  <main class="login-card">
+    <div class="brand">CBT<span>Pro</span></div>
+    <h1>Computer Based Test</h1>
+    <p class="muted">Enter your details to begin.</p>
+
+    <form id="loginForm">
+      <label for="studentName">Student Name</label>
+      <input id="studentName" type="text" placeholder="Enter your name" required>
+
+      <label for="studentClass">Class</label>
+      <select id="studentClass" required>
+        <option value="">Select class</option>
+        <option>JSS 1</option>
+        <option>JSS 2</option>
+        <option>JSS 3</option>
+        <option>SS 1</option>
+        <option>SS 2</option>
+        <option>SS 3</option>
+      </select>
+
+      <label for="subject">Subject</label>
+      <select id="subject" required>
+        <option value="">Select subject</option>
+        <option>Basic Science</option>
+        <option>Mathematics</option>
+        <option>English Language</option>
+      </select>
+
+      <button class="btn primary" type="submit">Start Examination</button>
+    </form>
+  </main>
+  <script src="js/questions.js"></script>
+  <script src="js/exam.js"></script>
+</body>
+</html>

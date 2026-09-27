@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CBT Examination</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">CBT<span>Pro</span></div>
+    <div class="exam-info">
+      <span id="studentDisplay">Student</span>
+      <span class="timer" id="timer">20:00</span>
+    </div>
+  </header>
+
+  <main class="exam-layout">
+    <section class="question-card">
+      <div class="question-head">
+        <h2 id="subjectDisplay">Examination</h2>
+        <span id="questionNumber">Question 1 of 10</span>
+      </div>
+
+      <div class="progress"><div id="progressBar"></div></div>
+
+      <h3 id="questionText"></h3>
+      <div id="options" class="options"></div>
+
+      <div class="actions">
+        <button id="prevBtn" class="btn secondary">Previous</button>
+        <button id="markBtn" class="btn warning">Mark for Review</button>
+        <button id="nextBtn" class="btn primary">Next</button>
+      </div>
+    </section>
+
+    <aside class="navigator">
+      <h3>Question Navigator</h3>
+      <p class="muted">Click a number to jump to a question.</p>
+      <div id="questionNav" class="question-nav"></div>
+      <button id="submitBtn" class="btn danger full">Submit Examination</button>
+    </aside>
+  </main>
+
+  <script src="js/questions.js"></script>
+  <script src="js/exam.js"></script>
+</body>
+</html>
