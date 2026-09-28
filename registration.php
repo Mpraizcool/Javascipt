@@ -37,7 +37,7 @@ if($num<1)
     } else {
     ?>
   <main class="login-card">
-    <div class="brand">CBT<span>Pro</span></div>
+    <div class="brand">CBT<span></span></div>
     <h1>Computer Based Test</h1>
     <p class="muted">Enter your details to begin.</p>
 
